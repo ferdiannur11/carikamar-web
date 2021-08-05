@@ -23,6 +23,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <!--- Custome Css -->
     <link rel="stylesheet" href="<?php echo base_url('assets/tera/custome.css'); ?>">
     <link rel="stylesheet" href="<?php echo base_url('assets/AdminLTE-3.1.0/dist/css/adminlte.min.css'); ?>">
+    <link rel="shortcut icon" href="<?php echo base_url('img/500px.png'); ?>">
 </head>
 
 <body class="hold-transition layout-top-nav">
@@ -76,7 +77,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                         <span class="badge badge-info">8</span>
                                     </div>
                                 </a>
-                                <a href="<?php echo site_url('Property_detail/index'); ?>"
+                                <a id="Property_detail" href="<?php echo site_url('Property_detail/index'); ?>"
                                     class="c-sidebar-item <?php if ($this->uri->segment(1) == "Property_detail") {
                                                                                                                         echo 'active';
                                                                                                                     } ?>">
@@ -153,15 +154,13 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <!-- /.control-sidebar -->
 
         <!-- Main Footer -->
-        <footer class="main-footer">
-            <!-- To the right -->
-            <div class="float-right d-none d-sm-inline">Anything you want</div>
-            <!-- Default to the left -->
-            <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong>
+        <!-- <footer class="main-footer">
+
+            <strong>Copyright &copy; 2014-2021 <a href="#">CariKamar</a>.</strong>
             All
             rights
             reserved.
-        </footer>
+        </footer> -->
     </div>
     <!-- ./wrapper -->
 
